@@ -1,0 +1,61 @@
+/* Variables */
+:root{
+    --oscuro:#212121;
+    --gradiant: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+}
+/* Reset para REM */
+html{
+	font-size: 62.5%; /* Reset para REM */
+	/* 62.5 = 10px de 16px */
+    box-sizing: border-box;
+    min-height: 100%;
+}
+
+*, *:before, *:after{
+	box-sizing: inherit;
+}
+
+/*Estilos generales */
+*{
+	margin:0;
+    padding:0;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    font-family: 'MuseoModerno', sans-serif;
+    font-size: 1.6rem;
+    min-height: 100%;
+    background-image: var(--gradiant);
+}
+.fondo-blanco{
+    background-color: white;
+}
+/* site-header es el contenedor de flexbox */
+.site-header nav{
+    max-width: 1200%;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media (min-width:768px){
+    .site-header nav{
+        justify-content: space-between;
+        flex-direction: row;
+    }
+}
+.site-header nav a{
+    color: var(--oscuro);
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+.site-header nav a:last-of-type{
+    margin-bottom: 0;
+}
+@media (min-width:768px){
+    .site-header nav a{
+        margin-bottom: 0;
+    }
+}
