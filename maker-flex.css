@@ -1,12 +1,12 @@
-/* Variables */
+	/* Variables */
 :root{
     --oscuro:#212121;
     --gradiant: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
 }
 /* Reset para REM */
 html{
-	font-size: 62.5%; /* Reset para REM */
-	/* 62.5 = 10px de 16px */
+   font-size: 62.5%; /* Reset para REM */
+    /* 62.5 = 10px de 16px */
     box-sizing: border-box;
     min-height: 100%;
 }
@@ -17,7 +17,7 @@ html{
 
 /*Estilos generales */
 *{
-	margin:0;
+    margin:0;
     padding:0;
     text-decoration: none;
     list-style: none;
